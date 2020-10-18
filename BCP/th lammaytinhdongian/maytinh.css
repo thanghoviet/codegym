@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(87, 57, 57);
+}
+.container{
+    margin: 10px auto;
+    width: 200px;
+}
+.screen{
+    background-color: rgb(240, 238, 238);
+    width : 100% ;
+    height : 50px ;
+    position : relative ;
+}
+.keyboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.item{
+    height: 50px;
+    outline: none;
+    border: 0.1px solid rgb(212,212,212);
+}
+.item:hover{
+    background-color: rgb(128,128,128);
+    cursor: pointer;
+}
+
+
+
+.screen .input{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 40px;
+    color: rgb(22, 22, 29);
+    z-index: 222;
+}
